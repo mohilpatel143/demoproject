@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
 <body>
-<h1>Home Page</h1>
+<div class="container">
+        <h1>hello</h1>
+        <img src="{% static 'images/demo.jpg' %}"  alt="load_image">
+        <form action="">
+            <input type="button" value="Click Me" onclick="disp()" />
+        </form>
+    </div>
+
+     <!-- Link JavaScript -->
+    <script src="{% static 'js/all.js' %}"></script>
 </body>
 </html>
